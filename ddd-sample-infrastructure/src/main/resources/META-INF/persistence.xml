@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="default">
+        <provider>org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider</provider>
+        <mapping-file>META-INF/orm-example.xml</mapping-file>
+
+        <properties>
+            <property name="hibernate.archive.autodetection" value="" />
+        </properties>
+    </persistence-unit>
+</persistence>
