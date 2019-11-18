@@ -1,12 +1,11 @@
-package com.ddd.sample;
+package com.ddd;
 
 public @interface DDD {
+    @interface DomainEntity{}
 
-    @interface Entity {}
+    @interface ValueObject{}
 
-    @interface ValueObjectId {}
-
-    @interface ValueObject {}
+    @interface ValueObjectId{}
 
     @interface Aggregate {}
 

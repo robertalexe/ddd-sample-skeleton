@@ -1,5 +1,6 @@
 package com.ddd.sample;
 
+import com.ddd.DDD;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider;
 import org.springframework.core.type.filter.AnnotationTypeFilter;
@@ -17,7 +18,7 @@ public class DDDComponentScanReport {
             System.out.println(bd.getBeanClassName());
         }
         scanner.addExcludeFilter(new AnnotationTypeFilter(DDD.ApplicationService.class));
-        scanner.addIncludeFilter(new AnnotationTypeFilter(DDD.Entity.class));
+        scanner.addIncludeFilter(new AnnotationTypeFilter(DDD.DomainEntity.class));
         System.out.println("************ Entities ************");
         for (BeanDefinition bd : scanner.findCandidateComponents("com.ddd.sample")) {
             System.out.println(bd.getBeanClassName());
