@@ -6,7 +6,7 @@ import static java.lang.String.format;
 import static java.util.Objects.hash;
 import static java.util.Objects.requireNonNull;
 
-public abstract class BaseValueObject<T extends BaseValueObject<T>> implements Validable<T> {
+public abstract class BaseValueObject<T extends BaseValueObject<T>> implements Validatable<T> {
     private final Class<T> type;
 
     public BaseValueObject(Class<T> type) {

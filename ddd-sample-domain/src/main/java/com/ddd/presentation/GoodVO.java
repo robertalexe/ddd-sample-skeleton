@@ -1,7 +1,7 @@
 package com.ddd.presentation;
 
 import com.ddd.DDD;
-import com.ddd.Validable;
+import com.ddd.Validatable;
 
 import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 
 @DDD.ValueObject
-public class GoodVO implements Validable<GoodVO> {
+public class GoodVO implements Validatable<GoodVO> {
 
     @NotEmpty private final List<String> someValues;
 
